@@ -10,14 +10,8 @@
 ///   Optional size of the scrollbars for firefox,
 ///   auto generate based on `$webkit-size` if it's not set.
 /// @example scss -
-///   html {
-///     overflow: hidden;
-///     body {
-///       height: 100vh;
-///       width: 100vw;
-///       overflow: auto;
-///       @include apply-scrollbar(10px, #0079d3, #2e3645);
-///     }
+///   html ,body {
+///     @include apply-scrollbar(10px, #0079d3, #2e3645);
 ///   }
 @mixin apply-scrollbar($webkit-size, $foreground-color, $background-color, $moz-size: null) {
   @if $moz-size == null {
